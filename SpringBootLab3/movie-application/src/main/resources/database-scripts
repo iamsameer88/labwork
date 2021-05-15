@@ -1,0 +1,14 @@
+create table movies
+(movie_id number(19) constraint movies_movie_id_pk primary key,
+movie_name varchar2(30) constraint movies_movie_name_nn not null,
+movie_cat varchar2(50) constraint movies_movie_cat_nn not null,
+movie_dur varchar2(30) constraint movies_movie_dur_nn not null,
+movie_ticket number(10,2) constraint movies_movie_ticket_nn not null);
+
+insert into movies values(1,'Dabang','Action','2:40 hrs',200);
+insert into movies values(2,'Conjuring','Horror','1:40 hrs',400);
+insert into movies values(3,'Iron Man','Scifi','1:40 hrs',500);
+insert into movies values(4,'Inception','Thriller and Scifi','2:00 hrs',600);
+insert into movies values(5,'Titanic','Romance','2:00 hrs',500);
+
+commit;

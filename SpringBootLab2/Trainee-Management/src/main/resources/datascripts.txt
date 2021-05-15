@@ -1,0 +1,16 @@
+create table Trainees
+(trainee_id number(19) constraint Trainees_trainee_id_pk primary key,
+trainee_name varchar2(30) constraint Trainees_trainee_name_nn not null,
+trainee_domain varchar2(50) constraint Trainees_trainee_domain_nn not null,
+trainee_location varchar2(30) constraint Trainees_trainee_nn not null);
+
+INSERT INTO Trainees VALUES(101,'Aditya Ranjan','Specialised in Java','Chennai');
+INSERT INTO Trainees VALUES(102,'Harsh Mehra','Specialised in MS-Excel','Delhi');
+INSERT INTO Trainees VALUES(103,'Sarthak Kumar','Specialised in C and C++','Noida');
+INSERT INTO Trainees VALUES(104,'Rahul chouhan','Specialised in MS-Office','Gurugram');
+INSERT INTO Trainees VALUES(105,'Parth Arora','Specialised in Java and HTML','Mumbai');
+
+
+
+
+commit;
